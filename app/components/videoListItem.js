@@ -4,10 +4,10 @@ import $ from 'jquery';
 const VideoItemList = ({video, onVideoSelect}) => {
 
   return (
-    <li className="list-group-item">
+    <li className="list-group-item" onClick={() => onVideoSelect(video)}>
       <div className="video-list media" >
         <div className="media-left">
-          <img className="media-object" src={video.snippet.thumbnails.default.url} onClick={() => onVideoSelect(video)}/>
+          <img className="media-object" src={video.snippet.thumbnails.default.url} />
         </div>
         <div className="media-body">
           <div className="media-heading">

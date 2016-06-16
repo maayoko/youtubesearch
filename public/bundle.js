@@ -49007,16 +49007,16 @@
 
 	  return _react2.default.createElement(
 	    'li',
-	    { className: 'list-group-item' },
+	    { className: 'list-group-item', onClick: function onClick() {
+	        return onVideoSelect(video);
+	      } },
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'video-list media' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'media-left' },
-	        _react2.default.createElement('img', { className: 'media-object', src: video.snippet.thumbnails.default.url, onClick: function onClick() {
-	            return onVideoSelect(video);
-	          } })
+	        _react2.default.createElement('img', { className: 'media-object', src: video.snippet.thumbnails.default.url })
 	      ),
 	      _react2.default.createElement(
 	        'div',
@@ -64624,7 +64624,6 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var API_KEY = 'AIzaSyBqi05j6yu950mlMDmWsJ-_jcOhN0tqJ0c';
-	var url_fetch = 'http://10.2.200.57:3000/playlists';
 
 	var PlayList = function (_Component) {
 	  (0, _inherits3.default)(PlayList, _Component);

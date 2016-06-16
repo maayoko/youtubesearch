@@ -3,7 +3,6 @@ import $ from 'jquery';
 import PlayListItem from './playListItem';
 
 const API_KEY = 'AIzaSyBqi05j6yu950mlMDmWsJ-_jcOhN0tqJ0c';
-const url_fetch = 'http://10.2.200.57:3000/playlists';
 
 class PlayList extends Component {
   constructor(props) {
