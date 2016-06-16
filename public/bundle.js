@@ -64625,7 +64625,6 @@
 
 	var API_KEY = 'AIzaSyBqi05j6yu950mlMDmWsJ-_jcOhN0tqJ0c';
 	var url_fetch = 'http://10.2.200.57:3000/playlists';
-	var playListIds = _jquery2.default.ajax({ url: url_fetch });
 
 	var PlayList = function (_Component) {
 	  (0, _inherits3.default)(PlayList, _Component);
@@ -64639,21 +64638,10 @@
 	      ids: [],
 	      currentPlaying: null
 	    };
-
-	    _this.fetchIds();
 	    return _this;
 	  }
 
 	  (0, _createClass3.default)(PlayList, [{
-	    key: 'fetchIds',
-	    value: function fetchIds() {
-	      var _this2 = this;
-
-	      _jquery2.default.ajax({ url: url_fetch }).then(function (ids) {
-	        _this2.setState({ ids: ids, currentPlaying: ids[0] });
-	      });
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
